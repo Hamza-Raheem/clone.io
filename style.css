@@ -1,0 +1,337 @@
+@font-face {
+  font-family: Netflix-Sans-Medium;
+  src: url(Netflix\ Sans\ Medium.otf);
+}
+@font-face {
+  font-family: Netflix-Sans-Bold;
+  src: url(Netflix\ Sans\ Bold.otf);
+}
+@font-face {
+  font-family: Netflix-Sans-Light;
+  src: url(Netflix\ Sans\ Light.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+  margin: auto;
+  position: relative;
+  height: 700;
+  width: 100%;
+  background-image: url(images/PK-en-20240610-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.box {
+  min-height: 700px;
+  width: 100%;
+  background-color: black;
+  opacity: 0.7;
+}
+
+.seperation {
+  height: 0.5rem;
+  background-color: #454444;
+}
+
+.header {
+  padding: 1.5rem 2rem;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.netflix-logo {
+  width: 9.2rem;
+}
+
+.sign-in {
+  position: relative;
+  z-index: 10;
+  padding: 0.5rem 1.1rem;
+  background-color: #e50914;
+  color: #feffff;
+  font-size: 0.8rem;
+  font-family: Netflix-Sans-Medium;
+  border-radius: 0.3rem;
+  transition: all 0.3 ease;
+}
+
+.sign-in:hover,
+.get-started-button:hover {
+  background-color: #c11119;
+}
+
+.button-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+}
+
+.get-started-button {
+  text-align: center;
+  height: 55px;
+  position: relative;
+  z-index: 10;
+  padding: 0.75rem 1.5rem;
+  background-color: #e50914;
+  color: #feffff;
+  font-size: 1.6rem;
+  font-family: Netflix-Sans-Medium;
+  font-weight: 500;
+  border-radius: 0.3rem;
+  transition: all 0.3 ease;
+}
+
+.email-input {
+  width: 350px;
+  height: 55px;
+  outline: #dd1313;
+  border: 1px solid rgb(110, 109, 109);
+  position: relative;
+  z-index: 10;
+  padding: 0.71rem;
+  background-color: #232323ac;
+  color: #feffff;
+  font-size: 0.9rem;
+  font-family: Netflix-Sans-Medium;
+  border-radius: 0.3rem;
+  transition: all 0.3 ease;
+}
+
+.hero {
+  margin: 0 auto;
+  color: #feffff;
+  width: 100%;
+  height: 80vh;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-title {
+  text-align: center;
+  font-size: 3rem;
+  font-family: Netflix-Sans-Bold;
+  font-weight: 900;
+  padding: 1rem 0;
+  padding-bottom: 0;
+}
+
+.hero-desc {
+  text-align: center;
+  font-size: 24px;
+  padding: 0.5rem 0;
+  font-family: Netflix-Sans-Light;
+  padding: 1rem 0;
+  padding-bottom: 1.5rem;
+}
+
+.hero-desc-2 {
+  text-align: center;
+  font-size: 21px;
+  font-family: Netflix-Sans-light;
+  font-weight: 200;
+  padding-bottom: 1rem;
+}
+
+.card {
+  min-height: 410px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  gap: 7rem;
+  padding: 70px 2rem;
+}
+
+.leftBox {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+.card-title {
+  font-size: 3rem;
+  font-family: Netflix-Sans-Bold;
+  padding: 1rem 0;
+}
+
+.card-description {
+  font-size: 1.5rem;
+  font-family: Netflix-Sans-Light;
+}
+
+.rightBox {
+  position: relative;
+}
+
+.rightBox img {
+  position: relative;
+  z-index: 10;
+  width: 418px;
+}
+
+.rightBox video {
+  position: absolute;
+  top: 68px;
+  right: 62px;
+  width: 297px;
+}
+
+.faq-section {
+  padding: 2rem 1rem;
+}
+
+.faq {
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  font-family: Netflix-Sans-Bold;
+  padding: 1rem 0;
+}
+
+.question-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2d2d2d;
+  color: white;
+  padding: 1rem;
+  font-size: 1.4rem;
+  transition: all 0.3s;
+}
+
+.question-box:hover {
+  background-color: #414141;
+}
+
+.faq-box {
+  padding: 0.2rem 0;
+}
+
+.question {
+  font-family: Netflix-Sans-Light;
+}
+
+.faq-desc {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1rem;
+  font-family: Netflix-Sans-Light;
+}
+
+@media screen and (max-width: 960px) {
+  .netflix-logo {
+    width: 6rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-desc {
+    font-size: 1.1rem;
+  }
+  .hero-desc-2 {
+    font-size: 1.1rem;
+  }
+
+  .card {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .leftBox {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+  }
+
+  .card-title {
+    font-size: 2rem;
+  }
+
+  .card-description {
+    font-size: 1.1rem;
+  }
+
+  .faq {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .button-section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .card {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 418px) {
+  .card {
+    gap: 1rem;
+  }
+
+  .button-section input {
+    width: 300px;
+  }
+
+  .rightBox img {
+    position: relative;
+    z-index: 10;
+    width: 340px;
+  }
+
+  .rightBox video {
+    position: absolute;
+    top: 51px;
+    right: 50px;
+    width: 244px;
+  }
+}
+
+@media screen and (max-width: 418px) {
+  .rightBox img {
+    position: relative;
+    z-index: 10;
+    width: 290px;
+  }
+
+  .rightBox video {
+    position: absolute;
+    top: 45px;
+    right: 40px;
+    width: 218px;
+  }
+}
